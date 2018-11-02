@@ -50,6 +50,7 @@ option(ENABLE_UPNP        "Enable UPnP support?" ON)
 option(ENABLE_AIRTUNES    "Enable AirTunes support?" ON)
 option(ENABLE_OPTICAL     "Enable optical support?" ON)
 option(ENABLE_PYTHON      "Enable python support?" ON)
+option(ENABLE_LUAJIT      "Enable LuaJIT support?" ON)
 # use ffmpeg from depends or system
 option(ENABLE_INTERNAL_FFMPEG "Enable internal ffmpeg?" OFF)
 if(UNIX)
@@ -154,6 +155,7 @@ set(optional_deps Alsa
                   MicroHttpd
                   PulseAudio
                   Python
+                  LuaJIT
                   SmbClient
                   Sndio
                   UDEV
